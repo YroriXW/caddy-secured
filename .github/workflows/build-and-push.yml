@@ -32,7 +32,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: yrorixw/caddy-with-auth
+          images: yrorixw/caddy-secured
           tags: |
             type=ref,event=tag
             type=semver,pattern={{version}}
