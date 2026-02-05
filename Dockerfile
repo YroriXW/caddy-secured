@@ -3,7 +3,8 @@ FROM caddy:2.10.2-builder-alpine AS builder
 RUN xcaddy build v2.10.2 \
     --with github.com/mholt/caddy-ratelimit \
     --with github.com/hslatman/caddy-crowdsec-bouncer \
-    --with github.com/corazawaf/coraza-caddy
+    --with github.com/corazawaf/coraza-caddy \
+    --with github.com/caddy-dns/namecheap
 
 FROM caddy:2.10.2-alpine
 
