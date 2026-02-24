@@ -4,7 +4,7 @@ RUN xcaddy build v2.11.1 \
     --with github.com/mholt/caddy-ratelimit \
     --with github.com/hslatman/caddy-crowdsec-bouncer \
     --with github.com/corazawaf/coraza-caddy \
-    --with github.com/caddy-dns/namecheap \
+    --with github.com/caddy-dns/cloudflare \
     --with github.com/mholt/caddy-l4
 
 FROM caddy:2.11.1-alpine
