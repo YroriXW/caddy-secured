@@ -5,7 +5,8 @@ RUN xcaddy build v2.11.1 \
     --with github.com/hslatman/caddy-crowdsec-bouncer \
     --with github.com/corazawaf/coraza-caddy \
     --with github.com/caddy-dns/cloudflare \
-    --with github.com/mholt/caddy-l4
+    --with github.com/mholt/caddy-l4 \
+    --with github.com/caddyserver/forwardproxy=github.com/klzgrad/forwardproxy@naive
 
 FROM caddy:2.11.1-alpine
 
